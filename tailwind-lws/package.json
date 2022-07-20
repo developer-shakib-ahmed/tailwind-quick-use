@@ -1,0 +1,15 @@
+{
+  "name": "tailwind-lws",
+  "version": "1.0.0",
+  "description": "This is a tailwind practice directory learn by LWS",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/tailwind.css -o ./output/tailwind.css -w"
+  },
+  "keywords": [],
+  "author": "Developer Shakib Ahmed",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.6"
+  }
+}
