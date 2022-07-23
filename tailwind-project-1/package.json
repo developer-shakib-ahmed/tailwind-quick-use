@@ -1,0 +1,17 @@
+{
+  "name": "tailwind-project-1",
+  "version": "1.0.0",
+  "description": "This is a tailwind landing page project learn by Traversy Media",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/tailwind.css -o ./pages/dist/style.css -w"
+  },
+  "keywords": [],
+  "author": "Developer Shakib Ahmed",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.6"
+  }
+}

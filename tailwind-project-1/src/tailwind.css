@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Our Custom Style */
+@media (max-width: 767px) {
+  body {
+    background-position: 50px -100px;
+    background-size: 500px;
+  }
+
+  div#navbar {
+    position: absolute;
+    top: 100%;
+    left: 16px;
+    background: #fff;
+    width: calc(100% - 32px);
+    padding: 15px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgb(0 0 0 / 6%);
+    transition: 0.15s;
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  div#navbar.active{
+    transform: translateY(10px);
+    opacity: 1;
+    visibility: visible;
+    transition: 0.2s;
+  }
+
+  div#navbar a {
+    display: block;
+    margin: 8px 0;
+  }
+}
+
+/* Modify tailwind base style */
+@layer base{
+  body {
+    background-image: url(./img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: 100% -33%;
+    background-size: 1100px;
+  }
+
+  a, button, input[type="submit"]{
+    @apply duration-300 cursor-auto md:cursor-pointer
+  }
+
+  input:not(input[type="radio"], input[type="checkbox"]), select, textarea{
+    @apply w-full;
+  }
+}
+
+/* Add btn component */
+@layer components{
+  .btn {
+    @apply text-white px-7 pt-2 pb-3 rounded-full font-semibold whitespace-nowrap;
+  }
+}

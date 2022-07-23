@@ -1,6 +1,6 @@
 npm init -y
 
-npm i -D tailwindcss
+npm install -D tailwindcss postcss autoprefixer
 
 npx tailwindcss init
 
